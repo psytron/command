@@ -1,0 +1,24 @@
+
+
+
+pg_config 
+
+
+SHOW data_directory;
+
+
+In psql 
+select setting from pg_settings where name = 'data_directory';
+pg_ctl -D /Library/PostgreSQL/9.6/data -l 
+
+
+brew services list
+
+# OSX web install version: 
+sudo su postgres
+pg_ctl -D /Library/PostgreSQL/9.6/data stop
+pg_ctl -D /Library/PostgreSQL/9.6/data start
+
+
+sudo docker exec my_db -it psql -U postgres
+CREATE DATABASE serious_db;

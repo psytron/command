@@ -1,0 +1,30 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1       hardfarm
+127.0.0.1       signalmesh
+127.0.0.1       whoami
+127.0.0.1       generic
+127.0.0.1       hyperlicense
+127.0.0.1       yojelly
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost 
+fe80::1%lo0	localhost
+127.0.0.1       digg.com
+127.0.0.1       news.google.com
+192.168.59.103 dockerhost
+127.0.0.1       nv
+127.0.0.1       np
+127.0.0.1       m2fx
+127.0.0.1:3000  beacon
+127.0.0.1       pbmef
+127.0.0.1       psybtc
+127.0.0.1       psytron
+127.0.0.2       news2.google.com
+127.0.0.1:8765  news3.google.com
+127.0.0.1       news4.google.com
+
