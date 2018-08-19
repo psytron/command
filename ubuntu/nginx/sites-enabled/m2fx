@@ -1,0 +1,24 @@
+server {
+    listen 80;
+    listen [::]:80;
+    server_name m2fx.co www.m2fx.co;
+
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+
+    server_name m2fx.co www.m2fx.co;
+    root /var/www/m2fxlogin;
+    ssl_certificate /etc/letsencrypt/live/m2fx.co/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/m2fx.co/privkey.pem;
+    
+    #SSL Configuration
+    include /etc/nginx/snippets/ssl.conf;
+
+    location / {
+            try_files $uri $uri/ =404;
+    }
+}

@@ -1,0 +1,2 @@
+PasswordAuthentication no    # watchout both on = no re-entry
+PermitRootLogin no           # watchout both on = no re-entry

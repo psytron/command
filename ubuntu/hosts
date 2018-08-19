@@ -1,2 +1,0 @@
-Make sure you also edit your droplet's hostname internally as well. Update /etc/hostname and /etc/hosts and reboot.
-# this is to rename hostname on Ubuntu box
